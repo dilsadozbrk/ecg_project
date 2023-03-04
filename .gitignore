@@ -164,4 +164,7 @@ raw_data/
 data/
 
 # credentials
-credits.json
+creds.json
+
+
+.DS_Store
