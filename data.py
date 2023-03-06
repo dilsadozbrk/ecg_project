@@ -25,13 +25,12 @@ for i in range(len(lst)):
     lst[i] = [x for xs in lst[i] for x in xs.split(':')] # spliting list elements to get column values
     lst[i] = [x.replace("#", "").replace(" ", "").replace("\n", "") for x in lst[i]] # cleaning special characters
     i +=1
-print(lst)
+    
 # creating a list to store only column names
 keys = ['Age', 'Sex', 'Dx']     
 # Remove column names from list to store only values
 values = [[sub_itm for sub_itm in sub_list if sub_itm not in keys] for sub_list in lst]  
 df = pd.DataFrame(values, columns = keys) 
-#print(df.head(20))
 df.to_csv('data/data.csv', sep=';', index=None)
 
 
