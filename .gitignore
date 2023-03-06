@@ -166,5 +166,10 @@ data/
 # credentials
 creds.json
 
+# dbt folders 
+target/
+dbt_packages/
+logs/
+
 
 .DS_Store
