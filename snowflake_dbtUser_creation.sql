@@ -1,6 +1,5 @@
 # Snowflake user creation
 
-```sql
 -- Use an admin role
 USE ROLE ACCOUNTADMIN;
 
@@ -34,4 +33,3 @@ GRANT ALL ON FUTURE SCHEMAS IN DATABASE ECG_DB to ROLE transform;
 GRANT ALL ON ALL TABLES IN SCHEMA ECG_DB.RAW to ROLE transform;
 GRANT ALL ON FUTURE TABLES IN SCHEMA ECG_DB.RAW to ROLE transform;
 
-``
